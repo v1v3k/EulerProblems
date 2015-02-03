@@ -24,9 +24,40 @@ def userInput():
     var1 = input("Enter Something ");
     print(var1)
 
+def generalStuff():
+    var1=10
+    print (var1)
+
+    #multi assign
+    a=b=c=1
+    a,b,c=1,2,"john"
+    print(a,b,c)
+
+
+def stringOp():
+    str="Hello World!"
+    print(str)
+    print(str[0])
+    print(str[2:5])#3to5
+    print(str[2:])#3to all
+    print(str[:3])#1to3
+
+
+
+def listOp():
+    list1=['abcd',786,2.23,'john',70.2]
+    print (list1)
+    tinylist1=[123,'john']
+    print(tinylist1)
+    print (list1[1:5])
+    print (list1+tinylist1)
+
 
 if __name__ == "__main__":
     print("Main Function started")
-    ifelse()
-    multiline()
-    userInput()
+    #ifelse()
+    #multiline()
+    #userInput()
+    #generalStuff()
+    #stringOp()
+    listOp()
