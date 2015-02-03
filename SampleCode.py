@@ -50,7 +50,22 @@ def listOp():
     tinylist1=[123,'john']
     print(tinylist1)
     print (list1[1:5])
+    #index i and j-1 --> [i:j]
     print (list1+tinylist1)
+
+
+'''
+tuple = ( 'abcd', 786 , 2.23, 'john', 70.2  )
+list = [ 'abcd', 786 , 2.23, 'john', 70.2  ]
+tuple[2] = 1000    # Invalid syntax with tuple
+list[2] = 1000     # Valid syntax with list
+'''
+#read only list
+def tupleOp():
+    tuple1=('abcd',786,2.23,'john')
+
+
+
 
 
 if __name__ == "__main__":
