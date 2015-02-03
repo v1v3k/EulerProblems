@@ -65,6 +65,35 @@ def tupleOp():
     tuple1=('abcd',786,2.23,'john')
 
 
+def dictop():
+    dict={}
+    dict['one']="this is one"
+    dict[2]="this is two"
+    tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
+    print (dict['one'])       # Prints value for 'one' key
+    print (dict[2])           # Prints value for 2 key
+    print (tinydict)          # Prints complete dictionary
+    print (tinydict.keys())   # Prints all the keys
+    print (tinydict.values()) # Prints all the values
+
+def conversion():
+    '''
+    int(x[,base])
+    long(c[,base])
+    float(x)
+    str(x)
+    '''
+    str1="a,b,c,d,e,f"
+    str2=str1.split(",")
+    print(tuple(str2))
+    #('a', 'b', 'c', 'd', 'e', 'f')
+    print(list(str2))
+    #['a', 'b', 'c', 'd', 'e', 'f']
+    print(set(str1))
+    #{'a', 'c', 'b', 'e', 'd', 'f', ','}
+    val3=[('a','b'),('c','d'),('e','f')]
+    print(dict(val3))
+
 
 
 
@@ -75,4 +104,6 @@ if __name__ == "__main__":
     #userInput()
     #generalStuff()
     #stringOp()
-    listOp()
+    #listOp()
+    dictop()
+    conversion()
